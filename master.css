@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+body {
+    background: url("./img/main-bg.jpeg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.main-nav, .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    width: 100vw;
+}
+
+.circle-menu {
+    border: 4px white solid;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    transition: translate(50%, 50%);
+}
+
+.box-shadow-menu {
+    position: relative;
+    padding-left: 1.25em;
+}
+
+.box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    left: 0.27em;
+    top: .47em;
+    width: 1em;
+    height: 0.1em;
+    background: white;
+    box-shadow: 0 0.25em 0 0 white, 0 0.5em 0 0 white;
+}
+
+.social {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    align-self: center;
+}
+
+.facebook {
+    margin-left: 50px;
+    width: 30px;
+    padding-bottom: 6px;
+}
+
+.twitter {
+    width: 50px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#your {
+    font-size: 140px;
+    line-height: 120px;
+}
+
+.anchor {
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+}
+
+.arrow {
+    padding-top: 20px;
+    width: 10px;
+    height: 50px;
+}
+
+@media all and (min-width: 737px) {
+    .main-nav {
+        display: flex;
+    }
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media all and (max-width: 736px) {
+    .main-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+}
+
+}
